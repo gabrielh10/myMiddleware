@@ -17,9 +17,19 @@ public class ServerHandler {
     public ServerHandler(int port){
         this.port = port;
     }
-    public void send (byte[] msg) throws IOException, InterruptedException{}
+    public void send (byte[] msg) throws IOException, InterruptedException{
 
-    public byte[] get () throws IOException, InterruptedException{ return null;}
+
+    }
+
+    public byte[] get () throws IOException, InterruptedException{
+       serverSocket = new ServerSocket(port);
+       socket = serverSocket.accept();
+       in = new DataInputStream(socket.getInputStream());
+       out = new DataOutputStream(socket.getOutputStream());
+       return null;
+
+    }
 
 
 }

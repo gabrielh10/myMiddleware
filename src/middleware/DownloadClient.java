@@ -9,7 +9,7 @@ public class DownloadClient {
         DownloadServiceProxy downloadServiceProxy = (DownloadServiceProxy) namingService.lookup("DownloadService");
 
         System.out.println(downloadServiceProxy.welcomeMSG());
-        downloadServiceProxy.listFiles();
+   //     downloadServiceProxy.listFiles();
 
     }
 }

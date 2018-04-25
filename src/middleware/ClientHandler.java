@@ -18,6 +18,9 @@ public class ClientHandler {
         this.port = port;
     }
     public void send (byte[] msg) throws IOException, InterruptedException{
+        socket = new Socket(ip, port);
+        out = new DataOutputStream(socket.getOutputStream());
+        in = new DataInputStream(socket.getInputStream());
     }
 
     public byte[] get() throws IOException, InterruptedException{

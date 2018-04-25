@@ -1,6 +1,11 @@
 package middleware;
 
 public class ReplyBody {
+
+    public ReplyBody(Object result) {
+        this.result = result;
+    }
+
     private Object result;
 
     public Object getResult() {

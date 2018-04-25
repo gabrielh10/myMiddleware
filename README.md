@@ -1,3 +1,3 @@
 # myMiddleware
 
-A implementation of an omm (object-oriented middleware).
+A implementation of an oom (object-oriented middleware).
